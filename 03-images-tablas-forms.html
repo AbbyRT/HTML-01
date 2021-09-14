@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" /> <!-- para caracteres del español -->
+    <title>Imagenes, tablas y forms</title>
+
+</head>
+
+<body>
+    <h1>Imágenes, tablas y forms</h1>
+    <h3>Imágenes</h3>
+    <img src="https://i.blogs.es/ceb112/mario-kart-tour/1024_2000.jpg">
+    <!--1) src= source de donde sta la imagne -->
+    <!-- 2)img a traves de url :v -->
+    <!--3) si es una imagen descargada tiene que estar en la misma carpeta, como matlab -->
+    <img src="max.jpeg" alt="gato usando un chaleco" title="Décimo Máximo Augusto" height="500"><!-- opcion  2 -->
+    <!--4) width= "400" height= "400" -->
+    <!-- opcion 1, se deforma la imagen -->
+    <!--5) atributo alt para hacer una dewcripion de la imagen, ls cual cargara si no se encuentra la imagen y tambien ayda a las personas con problemas de vision ya que ese texto es leido por tabletas electronicas.
+            6)con title el texto aparece al posar el puntero sobre la imagen
+            7)con width(ancho) y height(alto) se modifican las dimensiones de la imagen, en pixeles. Lo recomendable es que solo se defina una de las propiedades, ya sea alto o ancho, la otra medida se calcula automaticamente
+            8)Nota: todo lo de las propiedades de la imagen va en comillas-->
+
+    <!-- tablas -->
+    <!-- 1) tr: table raw: filas -->
+    <!-- 2)td celdas, columnas, table data -->
+    <!--3) por deafult no aparece el borde de la tabla, se deve especificar aqui con border, sin embargo el estilo se puede modificar con css 
+            4) th= table head: para que se vea que son encabezados-->
+    <hr /> <!-- pone u  divisor entre secciones -->
+    <h3>Tablas</h3>
+    <table border="5">
+        <tr>
+            <!-- fila 1 -->
+            <th>horario</th> <!-- cloumna 1 -->
+            <th>materia</th><!-- cliumna 2 -->
+        </tr>
+        <tr>
+            <!-- fila 2 -->
+            <td>09:00-10:00</td><!-- c1 -->
+            <td>algoritmos</td><!-- c2 -->
+        </tr>
+        <tr>
+            <!-- fila 3 -->
+            <td>11:00-13:00</td><!-- c1 -->
+            <td>programación orientada a objetos</td><!-- c2 -->
+        </tr>
+    </table>
+    <hr />
+    <h3>Mi horario de clases</h3>
+    <!-- horario, y dias de la semana, pro lo menos 5 filas sin  contar los encabezados -->
+    <table border="3">
+        <tr>
+            <!-- fila 1/encabezados -->
+            <th>Horario</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+
+        </tr>
+        <tr>
+            <!-- fila 2/elemento normal -->
+            <td>09:00-10:00</td>
+            <td>Introducción a HTML Básico</td>
+            <td>Introducción a CSS básico</td>
+            <td>Javascript I </td>
+            <td>Datos y variables I</td>
+            <td>Matrices y bucles I</td>
+
+        </tr>
+        <tr>
+            <!-- fila 3/elemento normal -->
+            <td>10:00-11:00</td>
+            <td>Introducción a HTML Avanzado</td>
+            <td>Introducción a CSS Avanzado</td>
+            <td>Javascript II</td>
+            <td>Datos y variables II</td>
+            <td>Matrices y bucles II</td>
+
+        </tr>
+        <tr>
+            <!-- fila 4/elemento normal -->
+            <td>11:00-12:00</td>
+            <td>Salidas profesionales</td>
+            <td>Introducción a Bootstrap básico</td>
+            <td>Funciones en JS</td>
+            <td>Condiciones y expresiones I</td>
+            <td>Ejercicio de Emails</td>
+
+        </tr>
+        <tr>
+            <!-- fila 5/elemento normal -->
+            <td>13:00-14:00</td>
+            <td>Introducción a entrevistas</td>
+            <td>Introducción a Bootstrap Avanzado</td>
+            <td>Comida</td>
+            <td>Condiciones y expresiones II</td>
+            <td>Comida</td>
+
+        </tr>
+        <tr>
+            <!-- fila 6/elemento normal -->
+            <td>14:00-15:00</td>
+            <td>Comida</td>
+            <td>Comida</td>
+            <td>Control de flujo</td>
+            <td>Comida</td>
+            <td>Reflexión diaria</td>
+
+        </tr>
+
+    </table>
+    <hr />
+    <h3>Como unir celdas</h3>
+    <!-- La celda con texto +la sig celda: en la celda con texto poner colspan="2" (jnir celdas de manera horizontal)
+    2) rowspan permte unir celdas de manera vertical-->
+    <table border="2">
+        <tr>
+            <th>Horario</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+
+        </tr>
+        <tr>
+            <!-- fila 6/elemento normal -->
+            <td>14:00-15:00</td>
+            <td rowspan="2">Comida</td>
+            <td>tarea 1 </td>
+            <td>Control de flujo</td>
+            <td colspan="2">Comida</td>
+
+
+        </tr>
+        <tr>
+            <!-- fila 6/elemento normal -->
+            <td>14:00-15:00</td>
+            <td>Comida</td>
+            <td>Control de flujo</td>
+            <td colspan="2">Comida</td>
+
+        </tr>
+
+    </table>
+    <hr/>
+    <h3>Prueba Carlos</h3>
+    <table border="2">
+
+        <tr>
+            <td>Rojo</td>
+            <td colspan="2">Verde</td>
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <td>Café</td>
+            <td>Marrón</td>
+            <td>Tinto</td>
+        </tr>
+        <tr>
+            <td colspan="3">Naranja</td>
+            <!-- <td></td>
+            <td></td> -->
+        </tr>
+        <tr>
+            <td colspan="2">Blanco</td>
+            <td>Negro</td>
+            <!-- <td></td> -->
+        </tr>
+    </table>
+
+</body>
+
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Formularios</title>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <!-- 1)Podemos solicitar datos al usuario 
+        2)form hace referencia al formulario, atributos:
+        3)action: hacia donde se van a mandar la info del formulario, url o direccion del archivo donde se van a procesar esos datos
+        4)method: protocolo de comunicacion, como se van a mandar los datos (peticion)
+        Ejemplo: method="POST". GET es el metodo por defecto
+        a)get
+        b) post
+        5) etiqueta INPUT: datos de entrada
+        6)label mensaje visible que aparece al lado de la etiqueta
+        se manda a un api o back end que procesa los datos 
+        Se debe incluir: name para saber como refeeenciar las variables
+        type define el tipo de entrada
+        el for liga la etiqueta con un campo, for y name deben coincidir los nombres
+        hay un tipo de dato llamado password, donde no muesytra el texto que se esta escribiendo
+            tambien hay uno tipo email, que comprueba que el texto tenga el fromato correspondiente
+            las valdiacciones se hacen con js
+            tipo number solo deja introducir numeros
+            hay tipo color donde permite selccionar colorcito
+            con el tipo date hay cuestiones, nos permite elegir una fecha
+            los mas especificos cada navegador lo abre a su amnera, safari no soporta el tipo date
+            es posible crear un calnediario con JS para que aparezca igual en todos los navegadores
+    -->
+
+    <form method="POST">
+        <!-- mretodo post, hioz el envio pero no muestra nada en la url -->
+        <!-- metodo get, muestra los datos -->
+        <p>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" /> <!-- input no lleva cierre -->
+
+        </p>
+
+        <p>
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" />
+        </p>
+
+        <p>
+            <label for="password">Contraseña</label>
+            <input type="password" name="password">
+
+        </p>
+
+        <p>
+            <label for="num">Números</label>
+            <input type="number" name="num">
+
+        </p>
+
+        <p>
+            <label for="">Publicacion</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea> <!-- este si tiene cierre -->
+            <!-- Para que el label no aparezca al lado se hace con css -->
+        </p>
+
+        <p>
+            <label for="">Color favorito</label>
+            <select name="color">
+                <option value="1">Rojo</option>
+                <option value="2">Verde</option>
+                <option value="3">Azul</option>
+                <!-- select hace una lista de elmenteos -->
+                <!-- el valor que se va a mandar al back end es el value, no el color como tal -->
+                <!-- Tambien se peude mandar texto, pero es mas facil el manejo de numeros -->
+            </select>
+
+        </p>
+
+        <p>
+            <!-- TODOS DEBEN TENER EL MISMO NOMBRE -->
+            <label for="edad">Selecciona tu rango de edad</label>
+            
+
+        </p>
+        <p>
+            <label for="">De 18 a 22</label>
+            <input type="radio" name="edad" id="">
+        </p>
+        <p>
+            <!-- <label for="">Selecciona tu rango de edad</label> -->
+            <label for="">De 23 a 28</label>
+            <input type="radio" name="edad" id="">
+            <!-- <label for="">Selecciona tu rango de edad</label> -->
+
+        </p>
+        <p>
+            <label for="">De 29 a 59</label>
+            <input type="radio" name="edad" id="">
+            <!-- con radio solo se puede seleccionar un solo valor de las diferentes opciones -->
+        </p>
+        <p>
+            <label for="checkit">Quieres papas?</label>
+            <input type="checkbox" name="checkit">
+        </p>
+        <!-- como mandamos los datos:boton o etiqueta input
+        a)manera antigua input y submit, d esa amnera en el link se ponen los datos ingresados D: inclusive la contraseña
+     -->
+
+        <!-- <input type="submit" value="guardar  datos">(opcion 1) -->
+
+        <!-- metodo button -->
+        <button type="submit">Guardar datos</button>
+        <!-- los botones deben estar dentro del form -->
+
+    </form>
+
+
+</body>
+
+
+
+
+
+</html>
