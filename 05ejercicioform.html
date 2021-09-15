@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Mi primer formulario</title>
+    <link href="05ejercicioform.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Galindo&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1 class="estilo bb">Encuesta de satisfacción del cliente</h1>
+    <h3>Tu opinión es importante</h3>
+    <p>
+        Por favor, introduce tu información de contacto:
+    </p>
+    <form method="POST">
+        <p>
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" />
+
+        </p>
+        <p>
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" />
+        </p>
+        <p>
+            <label for="num">Número Telefónico</label>
+            <input type="text" name="num" />
+        </p>
+
+        <p>
+            <label for="checkit">¿Es la primera vez que nos visitas? Sí</label>
+            <input type="checkbox" name="checkit">
+        </p>
+        <p>
+            ¿Cómo calificarías el sabor de la comida?
+            
+        </p>
+        <p>
+            <label for="scomida">Malo</label>
+            <input type="radio" name="scomida" id="" />
+        </p>
+        <p>
+            <label for="scomida">Regular</label>
+            <input type="radio" name="scomida" id="" />
+        </p>
+        <p>
+            <label for="scomida">Bueno</label>
+            <input type="radio" name="scomida" id="" />
+        </p>
+        <p>
+            <label for="scomida">Excelente</label>
+            <input type="radio" name="scomida" id="" />
+        </p>
+        <p>
+            <label for="checkit">¿Nos visitarías de nuevo? Sí</label>
+            <input type="checkbox" name="checkit">
+        </p>
+
+        <p>
+            <label for="">Sugerencias:</label>
+            <input type="text" name="num" />
+        </p>
+        <p>
+            <button type="submit">Enviar opinión</button>
+        </p>
+
+    </form>
+    <p class="bb fin">¡Gracias por participar!</p>
+    <img src="https://c.tenor.com/NMFzSC2hCpsAAAAC/spongebob-squarepants-dance.gif" />
+
+</body>
+
+</html>
